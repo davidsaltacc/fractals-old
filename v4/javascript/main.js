@@ -5,10 +5,10 @@ if (window.location.href.startsWith("http://127.0.0.1")) { // :P
 async function init() {
 
 if (!navigator.gpu) {
-    if (confirm("WebGPU not supported on your browser. Go back to possibly supported WebGL version?")) {
-        window.location.href = "/v2";
+    if (confirm("WebGPU not supported on your browser. Go to latest, probably supported version?")) {
+        window.location.href = "https://fractals.top";
     }
-    document.getElementById("statusbar").innerHTML = "WebGPU is not supported on your browser. Please go to the <a href=\"v2\">v2 version</a> instead.";
+    document.getElementById("statusbar").innerHTML = "WebGPU is not supported on your browser. Please go to the <a href=\"https://fractals.top\">latest version</a> instead.";
     return;
 }
 
